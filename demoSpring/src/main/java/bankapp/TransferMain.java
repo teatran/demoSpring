@@ -19,7 +19,7 @@ public class TransferMain {
 		TransferService transferService = appContext.getBean(TransferService.class);
 		
 		// use method in the bean
-		transferService.transferAmmount(100L, 202L, new Amount(9999.99));
+		transferService.transferAmount(100L, 202L, new Amount(9999.99));
 		
 		appContext.close();
 	}

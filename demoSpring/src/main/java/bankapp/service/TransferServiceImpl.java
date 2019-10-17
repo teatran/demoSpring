@@ -16,7 +16,7 @@ public class TransferServiceImpl implements TransferService {
 	}
 
 	@Override
-	public void transferAmmount(Long a, Long b, Amount amount) {
+	public void transferAmount(Long a, Long b, Amount amount) {
 		Account accountA = accountRepository.findById(a);
 		Account accountB = accountRepository.findById(b);
 		transferRepository.transfer(accountA, accountB, amount);
